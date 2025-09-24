@@ -3,9 +3,6 @@
 const ToDoList = {
   tasks: [{ title: "Помыть посуду", id: 1, priority: 1 }],
   addTask(title, id, priority) {
-    if (this.tasks.findIndex((task) => task.id === id) === -1) {
-      return;
-    }
     this.tasks.push({ title: title, id: id, priority: priority });
   },
   delTaskById(id) {
